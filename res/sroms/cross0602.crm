@@ -1,0 +1,109 @@
+--USER DESCRIPTION ------------------------
+[BasicCharParams]
+Classification=4
+CharMethod=0
+[Tool Parameters]
+Tool Manufacturer=ndi
+Tool Part Number=cross0602
+Revision Number=0
+Tool Type=1
+SubType=3
+Markers=4
+FiringSeq=0001020304000000000000000000000000000000
+Number Faces=1
+Number Groups=1
+GroupMask=11111000000000000000
+FaceMask=0101010101000000000000000000000000000000
+SwitchFlag=09000000
+LEDs=31313131
+Marker Type=41
+Lock=0
+UG Tracking=1
+Wireless=0
+Max Marker Angle=90
+Min Number Markers=3
+Max 3D Error=2.0000000
+
+--TOOL ALIGNMENT AND NORMALS ------------------------
+[XfrmsAndNorms]
+NumOperations =2
+
+[Xfrm001]
+XfrmType	= 0
+OrgFlag	= 1000
+A01	= -3.6973e+028f,-3.6973e+028f,-3.6973e+028f
+A02	= -3.6973e+028f,-3.6973e+028f,-3.6973e+028f
+A03	= -3.6973e+028f,-3.6973e+028f,-3.6973e+028f
+A04	= -3.6973e+028f,-3.6973e+028f,-3.6973e+028f
+
+[Xfrm002]
+XfrmType	= 2
+N01	= 0.0000e+000f,0.0000e+000f,0.0000e+000f
+N02	= 0.0000e+000f,0.0000e+000f,0.0000e+000f
+N03	= 0.0000e+000f,0.0000e+000f,0.0000e+000f
+N04	= 0.0000e+000f,0.0000e+000f,0.0000e+000f
+F01	= 0.0000e+000f,0.0000e+000f,0.0000e+000f
+
+[Xfrm Parameters]
+Abort On Error=TRUE
+Max Average RMS Error=2.0000000
+Max Iterations=100
+Max Coordinate Error=0.7500000
+Max Chi Square Error=2.0000000
+Pitch Accuracy=0.0000020
+Roll Accuracy=0.0000020
+Xt Accuracy=0.0020000
+Yaw Accuracy=0.0000020
+Yt Accuracy=0.0020000
+Zt Accuracy=0.0020000
+[Estimate]
+Markers=4
+P01=129.37,-56.16,-1962.27
+P02=148.07,  3.53,-1990.38
+P03=171.08,-89.79,-1953.49
+P04=196.59,-43.85,-1973.89
+
+--BUILD INFORMATION----------------------------
+[Build Parameters]
+Iterations=1
+Iteration01Overlay=1.0000000
+Iteration01Marker=1.0000000
+Abort on Error=TRUE
+Max Overlay Iterations=200
+Min Marker Views=1
+[Polaris]
+CommPort=3
+BaudRate=4
+Parity=0
+Handshake=1
+DataBits=8
+StopBits=1
+Revision=0.000
+SerialNumber=P7-12389
+[PostBuild]
+ToolPort=
+EndProgramSROM=0
+EndProgramUserSROM=0
+EndTest=1
+EndUGTest=1
+Pivot=0
+AlignmentDevice=0
+EndSave=1
+MoveToCentroid=1
+[Collection]
+Tracking Options=0
+Collection Units=0
+Collection Frames=300
+Delay=0
+Volume Selection=0
+Save Directory=C:\Users\dell\Desktop
+File Name=ToolChar
+Save Time=1
+Save PartNum=1
+File Format=1
+ToolPort=00
+[Polaris Tolerances]
+SegThres=0.450
+DotProductThres=200.000
+[FileType]
+Description=

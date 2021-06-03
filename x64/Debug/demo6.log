@@ -1,0 +1,64 @@
+﻿生成启动时间为 2021/6/2 22:00:30。
+     1>项目“G:\projects\demo\demo6_copy2\demo6.vcxproj”在节点 2 上(Build 个目标)。
+     1>QtWork:
+         Moc'ing mainwindow.h...
+         Moc'ing mythread.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /Ilibrary\include /Ilibrary\src /Ilibrary\src\include /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtWidgets /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtGui /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtCore /Idebug /I"C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\mkspecs\win32-msvc" /Zi /nologo /W3 /WX- /MP /Od /D _WINDOWS /D _UNICODE /D WIN32 /D WIN64 /D CAPICOMMON_EXPORTS /D UMBCS /D QT_DEPRECATED_WARNINGS /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt -Zc:rvalueCast -Zc:inline -w34100 -w34189 -w44996 main.cpp mainwindow.cpp mythread.cpp processtrackingdata.cpp Debug\moc_mainwindow.cpp Debug\moc_mythread.cpp
+         main.cpp
+         mainwindow.cpp
+         mythread.cpp
+         processtrackingdata.cpp
+         moc_mainwindow.cpp
+         moc_mythread.cpp
+     1>mythread.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>mainwindow.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>processtrackingdata.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\projects\demo\demo6_copy2\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mythread.cpp)
+     1>g:\projects\demo\demo6_copy2\debug\../mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mainwindow.cpp)
+     1>g:\projects\demo\demo6_copy2\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (processtrackingdata.cpp)
+     1>g:\projects\demo\demo6_copy2\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (main.cpp)
+     1>g:\projects\demo\demo6_copy2\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mainwindow.cpp)
+     1>g:\projects\demo\demo6_copy2\debug\../mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mythread.cpp)
+     1>processtrackingdata.cpp(16): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>processtrackingdata.cpp(17): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>processtrackingdata.cpp(18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>g:\projects\demo\demo6_copy2\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (main.cpp)
+     1>g:\projects\demo\demo6_copy2\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mainwindow.cpp)
+     1>g:\projects\demo\demo6_copy2\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mainwindow.cpp)
+     1>g:\projects\demo\demo6_copy2\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mythread.cpp)
+     1>g:\projects\demo\demo6_copy2\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mythread.cpp)
+     1>g:\projects\demo\demo6_copy2\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (main.cpp)
+     1>g:\projects\demo\demo6_copy2\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mainwindow.cpp)
+     1>g:\projects\demo\demo6_copy2\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mainwindow.cpp)
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\demo6.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib /LIBPATH:C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\qtmaind.lib shell32.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Guid.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Cored.lib opencv_world341d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\demo6.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\BufferedReader.obj
+         x64\Debug\ComConnection.obj
+         x64\Debug\CombinedApi.obj
+         x64\Debug\GbfButton1D.obj
+         x64\Debug\GbfComponent.obj
+         x64\Debug\GbfContainer.obj
+         x64\Debug\GbfData3D.obj
+         x64\Debug\GbfData6D.obj
+         x64\Debug\GbfFrame.obj
+         x64\Debug\GbfSystemAlert.obj
+         x64\Debug\MarkerData.obj
+         x64\Debug\PortHandleInfo.obj
+         x64\Debug\SystemAlert.obj
+         x64\Debug\SystemCRC.obj
+         x64\Debug\ToolData.obj
+         x64\Debug\Transform.obj
+         x64\Debug\main.obj
+         x64\Debug\mainwindow.obj
+         x64\Debug\mythread.obj
+         x64\Debug\processtrackingdata.obj
+         x64\Debug\moc_CombinedApi.obj
+         x64\Debug\moc_mainwindow.obj
+         x64\Debug\moc_mythread.obj
+            正在创建库 debug\\demo6.lib 和对象 debug\\demo6.exp
+         demo6.vcxproj -> G:\projects\demo\demo6_copy2\debug\demo6.exe
+     1>已完成生成项目“G:\projects\demo\demo6_copy2\demo6.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.94
