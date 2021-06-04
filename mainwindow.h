@@ -30,16 +30,14 @@ public:
     public:
     NDIPoint p1;
     NDIPoint p2;
-    NDIPoint p3;
-    NDIPoint p4;
     };
 
     class NDIData
     {
     public:
     bool NDIdataIsValid;
-    NDIPoint pt;
-    NDILine line;
+    NDILine line1;
+    NDILine line2;
     void JsontoNDIData(QByteArray arr)
     {
         QJsonParseError dataJsonError;
@@ -61,43 +59,35 @@ public:
             if(dataIsValid.toBool())
             {
                 NDIdataIsValid = true;
-                //给点坐标pt赋值
+                //探针线赋值
                 QJsonValue probeTx = dataJson.value("probeTx");
-                pt.x = probeTx.toDouble();
+                line1.p1.x = probeTx.toDouble();
                 QJsonValue probeTy = dataJson.value("probeTy");
-                pt.y = probeTy.toDouble();
+                line1.p1.y = probeTy.toDouble();
                 QJsonValue probeTz = dataJson.value("probeTz");
-                pt.z = probeTz.toDouble();
-                //给线/框坐标赋值
+                line1.p1.z = probeTz.toDouble();
+
+                QJsonValue probeMx = dataJson.value("probeMx");
+                line1.p2.x = probeMx.toDouble();
+                QJsonValue probeMy = dataJson.value("probeMy");
+                line1.p2.y = probeMy.toDouble();
+                QJsonValue probeMz = dataJson.value("probeMz");
+                line1.p2.z = probeMz.toDouble();
+
+                //标志架线赋值
                 QJsonValue rigidx1 = dataJson.value("rigidx1");
-                line.p1.x = rigidx1.toDouble();
-                QJsonValue rigidy1 = dataJson.value("rigidx1");
-                line.p1.y = rigidy1.toDouble();
-                QJsonValue rigidz1 = dataJson.value("rigidx1");
-                line.p1.z = rigidz1.toDouble();
+                line2.p1.x = rigidx1.toDouble();
+                QJsonValue rigidy1 = dataJson.value("rigidy1");
+                line2.p1.y = rigidy1.toDouble();
+                QJsonValue rigidz1 = dataJson.value("rigidz1");
+                line2.p1.z = rigidz1.toDouble();
 
-                QJsonValue rigidx2 = dataJson.value("rigidx1");
-                line.p2.x = rigidx2.toDouble();
-                QJsonValue rigidy2 = dataJson.value("rigidx1");
-                line.p2.y = rigidy2.toDouble();
-                QJsonValue rigidz2 = dataJson.value("rigidx1");
-                line.p2.z = rigidz2.toDouble();
-
-                QJsonValue rigidx3 = dataJson.value("rigidx1");
-                line.p3.x = rigidx3.toDouble();
-                QJsonValue rigidy3 = dataJson.value("rigidx1");
-                line.p3.y = rigidy3.toDouble();
-                QJsonValue rigidz3 = dataJson.value("rigidx1");
-                line.p3.z = rigidz3.toDouble();
-
-                QJsonValue rigidx4 = dataJson.value("rigidx1");
-                line.p4.x = rigidx4.toDouble();
-                QJsonValue rigidy4 = dataJson.value("rigidx1");
-                line.p4.y = rigidy4.toDouble();
-                QJsonValue rigidz4 = dataJson.value("rigidx1");
-                line.p4.z = rigidz4.toDouble();
-
-
+                QJsonValue rigidx2 = dataJson.value("rigidx2");
+                line2.p2.x = rigidx2.toDouble();
+                QJsonValue rigidy2 = dataJson.value("rigidy2");
+                line2.p2.y = rigidy2.toDouble();
+                QJsonValue rigidz2 = dataJson.value("rigidz2");
+                line2.p2.z = rigidz2.toDouble();
 
             }
 
@@ -114,8 +104,22 @@ public:
     {
         if(NDIdataIsValid)
         {
-            std::cout<<"point data test print :"<<pt.x<<std::endl;
-            std::cout<<"line data test print :"<<line.p1.x<<std::endl;
+            std::cout<<"----------------------------------"<<std::endl;
+            std::cout<<"point data 1X :"<<line1.p1.x<<std::endl;
+            std::cout<<"point data 1Y :"<<line1.p1.y<<std::endl;
+            std::cout<<"point data 1Z :"<<line1.p1.z<<std::endl;
+
+            std::cout<<"point data 2X :"<<line1.p2.x<<std::endl;
+            std::cout<<"point data 2Y :"<<line1.p2.y<<std::endl;
+            std::cout<<"point data 2Z :"<<line1.p2.z<<std::endl;
+
+            std::cout<<"line data 1X :"<<line2.p1.x<<std::endl;
+            std::cout<<"line data 1Y :"<<line2.p1.y<<std::endl;
+            std::cout<<"line data 1Z :"<<line2.p1.z<<std::endl;
+
+            std::cout<<"line data 2X :"<<line2.p2.x<<std::endl;
+            std::cout<<"line data 2Y :"<<line2.p2.y<<std::endl;
+            std::cout<<"line data 2Z :"<<line2.p2.z<<std::endl;
         }
         else if(!NDIdataIsValid)
         {

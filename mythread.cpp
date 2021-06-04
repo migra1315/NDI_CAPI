@@ -74,10 +74,14 @@ bool MyThread::startTracking(int replyOption)
         dataJson.insert("probeTy",track.probeTy);
         dataJson.insert("probeTz",track.probeTz);
 
-        dataJson.insert("probeQ0",track.probeQ0);
-        dataJson.insert("probeQx",track.probeQx);
-        dataJson.insert("probeQy",track.probeQy);
-        dataJson.insert("probeQz",track.probeQz);
+        dataJson.insert("probeMx",track.probeMx);
+        dataJson.insert("probeMy",track.probeMy);
+        dataJson.insert("probeMz",track.probeMz);
+
+//        dataJson.insert("probeQ0",track.probeQ0);
+//        dataJson.insert("probeQx",track.probeQx);
+//        dataJson.insert("probeQy",track.probeQy);
+//        dataJson.insert("probeQz",track.probeQz);
 
         dataJson.insert("rigidx1",track.rigidx1);
         dataJson.insert("rigidy1",track.rigidy1);
@@ -87,13 +91,13 @@ bool MyThread::startTracking(int replyOption)
         dataJson.insert("rigidy2",track.rigidy2);
         dataJson.insert("rigidz2",track.rigidz2);
 
-        dataJson.insert("rigidx3",track.rigidx3);
-        dataJson.insert("rigidy3",track.rigidy3);
-        dataJson.insert("rigidz3",track.rigidz3);
+//        dataJson.insert("rigidx3",track.rigidx3);
+//        dataJson.insert("rigidy3",track.rigidy3);
+//        dataJson.insert("rigidz3",track.rigidz3);
 
-        dataJson.insert("rigidx4",track.rigidx4);
-        dataJson.insert("rigidy4",track.rigidy4);
-        dataJson.insert("rigidz4",track.rigidz4);
+//        dataJson.insert("rigidx4",track.rigidx4);
+//        dataJson.insert("rigidy4",track.rigidy4);
+//        dataJson.insert("rigidz4",track.rigidz4);
 
     }
     else
@@ -126,10 +130,14 @@ bool MyThread::startTrackingSimulate()
         dataJson.insert("probeTy",track.probeTy);
         dataJson.insert("probeTz",track.probeTz);
 
-        dataJson.insert("probeQ0",track.probeQ0);
-        dataJson.insert("probeQx",track.probeQx);
-        dataJson.insert("probeQy",track.probeQy);
-        dataJson.insert("probeQz",track.probeQz);
+        dataJson.insert("probeMx",track.probeMx);
+        dataJson.insert("probeMy",track.probeMy);
+        dataJson.insert("probeMz",track.probeMz);
+
+//        dataJson.insert("probeQ0",track.probeQ0);
+//        dataJson.insert("probeQx",track.probeQx);
+//        dataJson.insert("probeQy",track.probeQy);
+//        dataJson.insert("probeQz",track.probeQz);
 
         dataJson.insert("rigidx1",track.rigidx1);
         dataJson.insert("rigidy1",track.rigidy1);
@@ -139,13 +147,13 @@ bool MyThread::startTrackingSimulate()
         dataJson.insert("rigidy2",track.rigidy2);
         dataJson.insert("rigidz2",track.rigidz2);
 
-        dataJson.insert("rigidx3",track.rigidx3);
-        dataJson.insert("rigidy3",track.rigidy3);
-        dataJson.insert("rigidz3",track.rigidz3);
+//        dataJson.insert("rigidx3",track.rigidx3);
+//        dataJson.insert("rigidy3",track.rigidy3);
+//        dataJson.insert("rigidz3",track.rigidz3);
 
-        dataJson.insert("rigidx4",track.rigidx4);
-        dataJson.insert("rigidy4",track.rigidy4);
-        dataJson.insert("rigidz4",track.rigidz4);
+//        dataJson.insert("rigidx4",track.rigidx4);
+//        dataJson.insert("rigidy4",track.rigidy4);
+//        dataJson.insert("rigidz4",track.rigidz4);
 
     }
     else

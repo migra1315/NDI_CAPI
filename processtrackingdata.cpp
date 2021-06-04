@@ -10,7 +10,7 @@ processTrackingData::processTrackingData(string str)
     if(dataIsValid)
     {
         getProbeCoordinate();
-        getProbeAttitude();
+//        getProbeAttitude();
         getRigidCoordinate();
     }
 }
@@ -43,20 +43,29 @@ void processTrackingData::getProbeCoordinate()
     string z = string(data,42,7);
     probeTz = atoi(z.data())/100.0;
 
+    string mx = string(data,74,7);
+    probeMx = atoi(mx.data())/100.0;
+
+    string my = string(data,81,7);
+    probeMy = atoi(my.data())/100.0;
+
+    string mz = string(data,89,7);
+    probeMz = atoi(mz.data())/100.0;
+
 }
 
-void processTrackingData::getProbeAttitude()
-{
-    string Q0 =string(data,4,6);
-    string Qx =string(data,10,6);
-    string Qy =string(data,16,6);
-    string Qz =string(data,22,6);
+//void processTrackingData::getProbeAttitude()
+//{
+//    string Q0 =string(data,4,6);
+//    string Qx =string(data,10,6);
+//    string Qy =string(data,16,6);
+//    string Qz =string(data,22,6);
 
-    probeQ0 = atoi(Q0.data())/10000.0;
-    probeQx = atoi(Qx.data())/10000.0;
-    probeQy = atoi(Qy.data())/10000.0;
-    probeQz = atoi(Qz.data())/10000.0;
-}
+//    probeQ0 = atoi(Q0.data())/10000.0;
+//    probeQx = atoi(Qx.data())/10000.0;
+//    probeQy = atoi(Qy.data())/10000.0;
+//    probeQz = atoi(Qz.data())/10000.0;
+//}
 
 void processTrackingData::getRigidCoordinate()
 {
@@ -70,14 +79,14 @@ void processTrackingData::getRigidCoordinate()
     string z2 = string(data,266,7);
     rigidx2 = atoi(x2.data())/100.0;rigidy2 = atoi(y2.data())/100.0;rigidz2 = atoi(z2.data())/100.0;
 
-    string x3 = string(data,273,7);
-    string y3 = string(data,280,7);
-    string z3 = string(data,287,7);
-    rigidx3 = atoi(x3.data())/100.0;rigidy3 = atoi(y3.data())/100.0;rigidz3 = atoi(z3.data())/100.0;
+//    string x3 = string(data,273,7);
+//    string y3 = string(data,280,7);
+//    string z3 = string(data,287,7);
+//    rigidx3 = atoi(x3.data())/100.0;rigidy3 = atoi(y3.data())/100.0;rigidz3 = atoi(z3.data())/100.0;
 
-    string x4 = string(data,294,7);
-    string y4 = string(data,301,7);
-    string z4 = string(data,308,7);
-    rigidx4 = atoi(x4.data())/100.0;rigidy4 = atoi(y4.data())/100.0;rigidz4 = atoi(z4.data())/100.0;
+//    string x4 = string(data,294,7);
+//    string y4 = string(data,301,7);
+//    string z4 = string(data,308,7);
+//    rigidx4 = atoi(x4.data())/100.0;rigidy4 = atoi(y4.data())/100.0;rigidz4 = atoi(z4.data())/100.0;
 
 }

@@ -1,8 +1,65 @@
-﻿生成启动时间为 2021/6/3 9:30:53。
-     1>项目“G:\projects\demo\NDI_CAPI\NDI_CAPI.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2021/6/4 11:01:24。
+     1>项目“G:\projects\NDI_CAPI\NDI_CAPI.vcxproj”在节点 2 上(Build 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (demo6.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\NDI_CAPI.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib /LIBPATH:C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\qtmaind.lib shell32.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Guid.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Cored.lib opencv_world341d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\NDI_CAPI.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\BufferedReader.obj
+     1>CustomBuild:
+         Generate moc_predefs.h
+       QtWork:
+         Uic'ing mainwindow.ui...
+         Moc'ing library\include\CombinedApi.h...
+         Moc'ing mainwindow.h...
+         Moc'ing mythread.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /Ilibrary\include /Ilibrary\src /Ilibrary\src\include /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtWidgets /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtGui /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.10.1\5.10.1\msvc2013_64\include\QtCore /Idebug /I"C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\mkspecs\win32-msvc" /Zi /nologo /W3 /WX- /MP /Od /D _WINDOWS /D _UNICODE /D WIN32 /D WIN64 /D CAPICOMMON_EXPORTS /D UMBCS /D QT_DEPRECATED_WARNINGS /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt -Zc:rvalueCast -Zc:inline -w34100 -w34189 -w44996 library\src\BufferedReader.cpp library\src\ComConnection.cpp library\src\CombinedApi.cpp library\src\GbfButton1D.cpp library\src\GbfComponent.cpp library\src\GbfContainer.cpp library\src\GbfData3D.cpp library\src\GbfData6D.cpp library\src\GbfFrame.cpp library\src\GbfSystemAlert.cpp library\src\MarkerData.cpp library\src\PortHandleInfo.cpp library\src\SystemAlert.cpp library\src\SystemCRC.cpp library\src\ToolData.cpp library\src\Transform.cpp main.cpp mainwindow.cpp mythread.cpp processtrackingdata.cpp Debug\moc_CombinedApi.cpp Debug\moc_mainwindow.cpp Debug\moc_mythread.cpp
+         BufferedReader.cpp
+         ComConnection.cpp
+         CombinedApi.cpp
+         GbfButton1D.cpp
+         GbfComponent.cpp
+         GbfContainer.cpp
+         GbfData3D.cpp
+         GbfData6D.cpp
+         GbfFrame.cpp
+         GbfSystemAlert.cpp
+         MarkerData.cpp
+         PortHandleInfo.cpp
+         SystemAlert.cpp
+         SystemCRC.cpp
+         ToolData.cpp
+         Transform.cpp
+         main.cpp
+         mainwindow.cpp
+         mythread.cpp
+         processtrackingdata.cpp
+     1>processtrackingdata.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>mainwindow.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>mythread.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\projects\ndi_capi\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (main.cpp)
+     1>g:\projects\ndi_capi\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mainwindow.cpp)
+     1>g:\projects\ndi_capi\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (processtrackingdata.cpp)
+     1>g:\projects\ndi_capi\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mythread.cpp)
+         moc_CombinedApi.cpp
+     1>processtrackingdata.cpp(21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>processtrackingdata.cpp(22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>processtrackingdata.cpp(23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>library\src\GbfFrame.cpp(158): warning C4189: “toolExists”: 局部变量已初始化但不引用
+     1>library\src\GbfFrame.cpp(187): warning C4189: “toolExists”: 局部变量已初始化但不引用
+         moc_mainwindow.cpp
+         moc_mythread.cpp
+     1>g:\projects\ndi_capi\debug\../mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mainwindow.cpp)
+     1>g:\projects\ndi_capi\debug\../mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mythread.cpp)
+     1>g:\projects\ndi_capi\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (main.cpp)
+     1>g:\projects\ndi_capi\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mainwindow.cpp)
+     1>g:\projects\ndi_capi\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mythread.cpp)
+     1>g:\projects\ndi_capi\mythread.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mainwindow.cpp)
+     1>g:\projects\ndi_capi\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (main.cpp)
+     1>g:\projects\ndi_capi\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (mainwindow.cpp)
+     1>g:\projects\ndi_capi\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mythread.cpp)
+     1>g:\projects\ndi_capi\processtrackingdata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (Debug\moc_mainwindow.cpp)
+     1>g:\projects\ndi_capi\mainwindow.h(126): warning C4102: “std”: 未引用的标签 (main.cpp)
+     1>g:\projects\ndi_capi\mainwindow.h(126): warning C4102: “std”: 未引用的标签 (mainwindow.cpp)
+     1>g:\projects\ndi_capi\debug\../mainwindow.h(126): warning C4102: “std”: 未引用的标签 (Debug\moc_mainwindow.cpp)
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\NDI_CAPI.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib /LIBPATH:C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\qtmaind.lib shell32.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Guid.lib C:\Qt\Qt5.10.1\5.10.1\msvc2013_64\lib\Qt5Cored.lib opencv_world341d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\NDI_CAPI.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\BufferedReader.obj
          x64\Debug\ComConnection.obj
          x64\Debug\CombinedApi.obj
          x64\Debug\GbfButton1D.obj
@@ -26,9 +83,9 @@
          x64\Debug\moc_mainwindow.obj
          x64\Debug\moc_mythread.obj
             正在创建库 debug\\NDI_CAPI.lib 和对象 debug\\NDI_CAPI.exp
-         NDI_CAPI.vcxproj -> G:\projects\demo\NDI_CAPI\debug\NDI_CAPI.exe
-     1>已完成生成项目“G:\projects\demo\NDI_CAPI\NDI_CAPI.vcxproj”(Build 个目标)的操作。
+         NDI_CAPI.vcxproj -> G:\projects\NDI_CAPI\debug\NDI_CAPI.exe
+     1>已完成生成项目“G:\projects\NDI_CAPI\NDI_CAPI.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.14
+已用时间 00:00:09.49
